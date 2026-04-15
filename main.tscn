@@ -39,6 +39,7 @@ tracker = &"left_hand"
 tracker = &"right_hand"
 
 [node name="RightHand" parent="XROrigin3D/RightHand" unique_id=1569877768 instance=ExtResource("4_5vw27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014316559, 0.88906455, -0.6726811)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="XROrigin3D" unique_id=1359242720]
 
@@ -64,7 +65,6 @@ mesh = SubResource("PlaneMesh_0xm2m")
 [node name="convert" parent="." unique_id=1824715613 instance=ExtResource("4_1bvp3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
 
-[node name="sword" parent="." unique_id=1658793598 instance=ExtResource("5_lquwl")]
-transform = Transform3D(0.01755435, -0.49965099, -0.0063833985, -5.5839866e-10, -0.006387336, 0.4999592, -0.49969175, -0.017552918, -0.00022425162, 0.35505366, 0.31647104, -0.8103533)
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=1285204256]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="sword" unique_id=670118602]
+[node name="Root Scene" parent="RigidBody3D" unique_id=1658793598 instance=ExtResource("5_lquwl")]
