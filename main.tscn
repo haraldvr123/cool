@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dgmecncsnv0e" path="res://pixellabs-stairs-3764.glb" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://raeeicvvindd" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_hand.tscn" id="4_5vw27"]
 [ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="4_272bh"]
+[ext_resource type="PackedScene" uid="uid://bsxlry0jsfhsa" path="res://Lighthouse.glb" id="7_4c57u"]
 [ext_resource type="PackedScene" uid="uid://cmh3sbjt2mws7" path="res://ball.tscn" id="8_5vw27"]
 [ext_resource type="PackedScene" uid="uid://b7iu070gec501" path="res://cubes.tscn" id="9_kek77"]
 
@@ -61,6 +62,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24240497, 0.91607815, -0.78
 
 [node name="CUBES4" parent="XROrigin3D" unique_id=1393085229 instance=ExtResource("9_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51714456, 0.91607815, -0.7843787)
+
+[node name="Lighthouse" parent="XROrigin3D" unique_id=1769341666 instance=ExtResource("7_4c57u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1, -17)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=812943472]
 environment = SubResource("Environment_0xm2m")
