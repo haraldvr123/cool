@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://njx823gyk04n" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_hand.tscn" id="3_272bh"]
 [ext_resource type="PackedScene" uid="uid://dgmecncsnv0e" path="res://pixellabs-stairs-3764.glb" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://raeeicvvindd" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_hand.tscn" id="4_5vw27"]
+[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="4_272bh"]
+[ext_resource type="PackedScene" uid="uid://cmh3sbjt2mws7" path="res://ball.tscn" id="8_5vw27"]
 
 [sub_resource type="Environment" id="Environment_0xm2m"]
 ambient_light_color = Color(0.04543671, 0.25026318, 0.2657982, 1)
@@ -34,11 +36,14 @@ tracker = &"left_hand"
 
 [node name="LeftHand" parent="XROrigin3D/LeftHand" unique_id=1282064367 instance=ExtResource("3_272bh")]
 
+[node name="FunctionPickup" parent="XROrigin3D/LeftHand" unique_id=1290992877 instance=ExtResource("4_272bh")]
+
 [node name="RightHand" type="XRController3D" parent="XROrigin3D" unique_id=1202475045]
 tracker = &"right_hand"
 
-[node name="RightHand" parent="XROrigin3D/RightHand" unique_id=1569877768 instance=ExtResource("4_5vw27")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014316559, 0.88906455, -0.6726811)
+[node name="RightHand" parent="XROrigin3D/RightHand" unique_id=331498160 instance=ExtResource("4_5vw27")]
+
+[node name="FunctionPickup" parent="XROrigin3D/RightHand" unique_id=1035250130 instance=ExtResource("4_272bh")]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="XROrigin3D" unique_id=1359242720]
 
@@ -63,3 +68,7 @@ mesh = SubResource("PlaneMesh_0xm2m")
 
 [node name="convert" parent="." unique_id=1824715613 instance=ExtResource("4_1bvp3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+script = ExtResource("1_ig7tw")
+
+[node name="PickableObject" parent="." unique_id=1172713315 instance=ExtResource("8_5vw27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.59851754, 0, -1.6707859)
