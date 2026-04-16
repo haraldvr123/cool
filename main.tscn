@@ -12,7 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://b7iu070gec501" path="res://cubes.tscn" id="9_kek77"]
 
 [sub_resource type="Environment" id="Environment_0xm2m"]
-ambient_light_color = Color(0.04543671, 0.25026318, 0.2657982, 1)
+background_mode = 2
+ambient_light_color = Color(0.28017977, 0.6737199, 0.5240649, 1)
 ambient_light_energy = 0.3
 
 [sub_resource type="BoxMesh" id="BoxMesh_ig7tw"]
@@ -22,7 +23,11 @@ ambient_light_energy = 0.3
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bvp3"]
 albedo_texture = ExtResource("2_0xm2m")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4c57u"]
+albedo_color = Color(0.20784314, 0.5764706, 0.36078432, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_0xm2m"]
+material = SubResource("StandardMaterial3D_4c57u")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5vw27"]
 
@@ -63,9 +68,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24240497, 0.91607815, -0.78
 [node name="CUBES4" parent="XROrigin3D" unique_id=1393085229 instance=ExtResource("9_kek77")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51714456, 0.91607815, -0.7843787)
 
-[node name="Lighthouse" parent="XROrigin3D" unique_id=1769341666 instance=ExtResource("7_4c57u")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1, -17)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=812943472]
 environment = SubResource("Environment_0xm2m")
 
@@ -97,3 +99,6 @@ script = ExtResource("1_ig7tw")
 
 [node name="PickableObject" parent="." unique_id=1172713315 instance=ExtResource("8_5vw27")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5985175, 0.70959866, -1.6707859)
+
+[node name="Lighthouse" parent="." unique_id=1769341666 instance=ExtResource("7_4c57u")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -2, -1, -17)
