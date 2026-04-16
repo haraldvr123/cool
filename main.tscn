@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://raeeicvvindd" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_hand.tscn" id="4_5vw27"]
 [ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="4_272bh"]
 [ext_resource type="PackedScene" uid="uid://cmh3sbjt2mws7" path="res://ball.tscn" id="8_5vw27"]
+[ext_resource type="PackedScene" uid="uid://b7iu070gec501" path="res://cubes.tscn" id="9_kek77"]
 
 [sub_resource type="Environment" id="Environment_0xm2m"]
 ambient_light_color = Color(0.04543671, 0.25026318, 0.2657982, 1)
@@ -74,9 +75,21 @@ mesh = SubResource("PlaneMesh_0xm2m")
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
 shape = SubResource("BoxShape3D_5vw27")
 
+[node name="CUBES" parent="ground" unique_id=1651432502 instance=ExtResource("9_kek77")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0.012, -0.01)
+
+[node name="CUBES2" parent="ground" unique_id=1375434563 instance=ExtResource("9_kek77")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0.0024240497, 0.011160782, -0.011133596)
+
+[node name="CUBES3" parent="ground" unique_id=1446608888 instance=ExtResource("9_kek77")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0.0024240497, 0.011160782, -0.007843787)
+
+[node name="CUBES4" parent="ground" unique_id=1393085229 instance=ExtResource("9_kek77")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0.0051714457, 0.011160782, -0.007843787)
+
 [node name="convert" parent="." unique_id=1824715613 instance=ExtResource("4_1bvp3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
 script = ExtResource("1_ig7tw")
 
 [node name="PickableObject" parent="." unique_id=1172713315 instance=ExtResource("8_5vw27")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5985175, 0.70959866, -2.670786)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5985175, 0.70959866, -1.6707859)
