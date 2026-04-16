@@ -5,13 +5,19 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_41u45"]
 radius = 0.001
 
-[sub_resource type="SphereMesh" id="SphereMesh_ktgx5"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x8fbi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_41u45"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_x8fbi"]
 
 [node name="PickableObject" unique_id=1172713315 instance=ExtResource("1_x8fbi")]
 
 [node name="CollisionShape3D" parent="." index="0"]
 shape = SubResource("SphereShape3D_41u45")
-debug_color = Color(0.6407648, 0.46090102, 0.6692436, 0.41960785)
+debug_color = Color(0.64474666, 0.42197528, 0.8047204, 0.41960785)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." index="1" unique_id=766440517]
-mesh = SubResource("SphereMesh_ktgx5")
+material_override = SubResource("StandardMaterial3D_x8fbi")
+material_overlay = SubResource("StandardMaterial3D_41u45")
+mesh = SubResource("BoxMesh_x8fbi")
