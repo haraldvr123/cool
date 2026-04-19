@@ -94,4 +94,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.424017, 0, 0.71869993)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2866719, 0, 0.03259611)
 
 [node name="Lighthouse" parent="." unique_id=1769341666 instance=ExtResource("7_4c57u")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 12.186561, -3.5248775, -6.858473)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 53.780834, -3.5248775, -6.858473)
