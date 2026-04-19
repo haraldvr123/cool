@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://b7iu070gec501" path="res://cubes.tscn" id="9_kek77"]
 [ext_resource type="PackedScene" uid="uid://d4ka0dyksf3ew" path="res://table.glb" id="10_dg77c"]
 [ext_resource type="PackedScene" uid="uid://to5ih32lqibe" path="res://chair_broken.glb" id="11_ycdy4"]
+[ext_resource type="PackedScene" uid="uid://cmh3sbjt2mws7" path="res://ball.tscn" id="12_dg77c"]
 
 [sub_resource type="Environment" id="Environment_0xm2m"]
 background_mode = 2
@@ -95,3 +96,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2866716, 0, 0.03259611)
 
 [node name="Lighthouse" parent="." unique_id=1769341666 instance=ExtResource("7_4c57u")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 53.780834, -3.5248775, -6.858473)
+
+[node name="PickableObject" parent="." unique_id=1172713315 instance=ExtResource("12_dg77c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -5)
