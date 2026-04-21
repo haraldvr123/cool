@@ -5,13 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://njx823gyk04n" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_hand.tscn" id="3_272bh"]
 [ext_resource type="PackedScene" uid="uid://raeeicvvindd" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_hand.tscn" id="4_5vw27"]
 [ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="4_272bh"]
-[ext_resource type="PackedScene" uid="uid://bsxlry0jsfhsa" path="res://Lighthouse.glb" id="7_4c57u"]
-[ext_resource type="PackedScene" uid="uid://c1rh5xomnr2ly" path="res://chair.glb" id="7_efxa6"]
-[ext_resource type="PackedScene" uid="uid://do4jm6veov2ve" path="res://crowbar.glb" id="8_5vw27"]
 [ext_resource type="PackedScene" uid="uid://b7iu070gec501" path="res://cubes.tscn" id="9_kek77"]
-[ext_resource type="PackedScene" uid="uid://d4ka0dyksf3ew" path="res://table.glb" id="10_dg77c"]
-[ext_resource type="PackedScene" uid="uid://to5ih32lqibe" path="res://chair_broken.glb" id="11_ycdy4"]
-[ext_resource type="PackedScene" uid="uid://cmh3sbjt2mws7" path="res://ball.tscn" id="12_dg77c"]
 
 [sub_resource type="Environment" id="Environment_0xm2m"]
 background_mode = 2
@@ -28,9 +22,6 @@ material = SubResource("StandardMaterial3D_4c57u")
 
 [node name="Main" type="Node3D" unique_id=1727937391]
 script = ExtResource("1_ig7tw")
-
-[node name="chair" parent="." unique_id=2027573943 instance=ExtResource("7_efxa6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2, -21)
 
 [node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=2021617588]
 script = ExtResource("2_h2yge")
@@ -81,21 +72,3 @@ mesh = SubResource("PlaneMesh_0xm2m")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ground/StaticBody3D" unique_id=96147906]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
 shape = SubResource("BoxShape3D_5vw27")
-
-[node name="crowbar" parent="." unique_id=410887547 instance=ExtResource("8_5vw27")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -0.0005455017, 0.9833007, -0.35710382)
-
-[node name="table" parent="." unique_id=1749143038 instance=ExtResource("10_dg77c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3952174, 0, -2.0529056)
-
-[node name="chair_broken" parent="." unique_id=620281233 instance=ExtResource("11_ycdy4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.424017, 0, 0.71869993)
-
-[node name="table2" parent="." unique_id=1788306654 instance=ExtResource("10_dg77c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2866716, 0, 0.03259611)
-
-[node name="Lighthouse" parent="." unique_id=1769341666 instance=ExtResource("7_4c57u")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 53.780834, -3.5248775, -6.858473)
-
-[node name="PickableObject" parent="." unique_id=1172713315 instance=ExtResource("12_dg77c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -5)
