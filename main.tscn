@@ -43,8 +43,6 @@ tracker = &"right_hand"
 
 [node name="FunctionPickup" parent="XROrigin3D/RightHand" unique_id=1035250130 instance=ExtResource("4_272bh")]
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="XROrigin3D" unique_id=1359242720]
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=812943472]
 environment = SubResource("Environment_0xm2m")
 
